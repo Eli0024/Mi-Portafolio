@@ -5,7 +5,7 @@ export const Contacto = () => {
   return (
     <>
       <div
-        className="bg-gray-800 relative flex justify-center items-center overflow-hidden">
+        className="bg-white relative flex justify-center items-center overflow-hidden">
         <div className="bg-white bg-opacity-80 rounded-lg shadow-lg p-6 max-w-md mx-auto">
           <h1 className="text-4xl font-bold text-center mb-6">Contacto</h1>
           <p className="text-center mb-4">Si deseas ponerte en contacto, puedes encontrarme en las siguientes plataformas:</p>

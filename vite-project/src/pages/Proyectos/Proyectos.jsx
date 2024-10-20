@@ -5,7 +5,7 @@ export const Proyectos = () => {
   return (
     <>
       <div
-        className="bg-gray-800 relative flex justify-center items-center overflow-hidden">
+        className="bg-white relative flex justify-center items-center overflow-hidden">
         <div className="bg-white bg-opacity-80 rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
           <h1 className="text-4xl font-bold text-center mb-4">Mis Proyectos</h1>
           <ul className="space-y-4">
