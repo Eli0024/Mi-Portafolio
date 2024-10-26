@@ -1,16 +1,19 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './Inicio.css';
 import { FaWhatsapp, FaGithub, FaInstagram, FaLinkedin, FaThumbsUp, FaArrowDown } from 'react-icons/fa';
 import image from '../../assets/image/Eliana.jpeg'; 
 import Waves from '../../components/Waves';
 
+
 export const Inicio = () => {
+   const nextSectionRef = useRef(null);
+
   const handleScroll = () => {
-    const nextSection = document.getElementById('next-section');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+    if (nextSectionRef.current) {
+      nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
 
   return (
     <>
@@ -25,16 +28,13 @@ export const Inicio = () => {
               Web Developer
             </div>
             <div className="flex justify-center space-x-4 mt-4">
-              <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/3114220469" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="text-white text-6xl hover:text-green-400" />
               </a>
-              <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Eli0024" target="_blank" rel="noopener noreferrer">
                 <FaGithub className="text-white text-6xl hover:text-gray-400" />
               </a>
-              <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
-                <FaInstagram className="text-white text-6xl hover:text-pink-400" />
-              </a>
-              <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-white text-6xl hover:text-blue-400" />
               </a>
             </div>

@@ -1,6 +1,6 @@
 export const Data = {
     introduccion: {
-      texto: "Soy una desarrolladora web full stack apasionada por crear soluciones innovadoras y funcionales.",
+      texto: "Desarrolladora web full stack apasionada por crear soluciones innovadoras y funcionales.",
       habilidades: "Me destaco en la construcción de aplicaciones web responsivas y eficientes, y disfruto trabajar en todas las etapas del desarrollo, desde la conceptualización hasta la implementación."
     },
     disposicion: {
