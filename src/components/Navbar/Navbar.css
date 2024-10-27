@@ -11,3 +11,19 @@ html {
     z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
   }
   
+  .navbar {
+    position: relative;
+  }
+  
+  ul {
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    ul {
+      display: flex !important;
+    }
+  }
+  
+  
+  

@@ -1,9 +1,15 @@
-import React from 'react'; 
+import React, { useEffect } from 'react';
 import { Data } from '../data/Skills';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({duration:2000})
+}, []);
+
   return (
-    <div className="h-screen bg-gray-100 flex flex-col items-center justify-center p-6">
+    <div className="h-screen bg-gray-100 flex flex-col items-center justify-center p-6" data-aos="fade-right">
       <h1 className="text-8xl font-bold mb-8 text-center text-blue-600 animate-bounce">Tecnologías</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {Data.skills.map(skill => (

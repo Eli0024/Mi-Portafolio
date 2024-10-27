@@ -4,7 +4,7 @@ const Waves = () => {
   return (
     <>
       <svg
-        className="absolute bottom-0 left-0 w-full"
+        className="absolute bottom-0 left-0 w-auto"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
       >
