@@ -26,14 +26,14 @@ export const Sobre = () => {
 
         {/* Tarjeta para la Información */}
         <div className="bg-transparent rounded-2xl p-8 flex flex-col w-full md:w-2/3">
-          <h1 className="text-4xl md:text-5xl text-center font-bold text-white mb-4">
+          <h1 className="text-2xl md:text-5xl text-center font-bold text-white mb-4">
             <span className="bg-transparent px-2 font-poppins">SOBRE</span> 
             <span className="bg-red-500 text-white px-2 font-poppins">MI</span>
           </h1>
           <hr className="bg-green-400 border-4 mb-8 mt-6" />
-          <p className="text-xl md:text-4xl text-white mb-6 text-justify font-poppins">{Data.introduccion.texto}</p>
-          <p className="text-xl md:text-4xl text-white mb-6 text-justify font-poppins">{Data.introduccion.habilidades}</p>
-          <p className="text-xl md:text-4xl text-white mb-6 text-justify font-poppins">{Data.disposicion.texto}</p>
+          <p className="text-xl md:text-2xl text-white mb-6 text-justify font-poppins">{Data.introduccion.texto}</p>
+          <p className="text-xl md:text-2xl text-white mb-6 text-justify font-poppins">{Data.introduccion.habilidades}</p>
+          <p className="text-xl md:text-2xl text-white mb-6 text-justify font-poppins">{Data.disposicion.texto}</p>
         </div>
       </div>
     </div>

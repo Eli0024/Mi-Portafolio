@@ -15,10 +15,16 @@ export const Data = {
   ],
   "experiencia": [
     {
-      "titulo": "Colombina del Cauca S.A",
+      "titulo": "COLOMBINA DEL CAUCA S.A",
       "nit": 817000705,
       "anio": "2018",
       "cargo": "Técnico en Sistemas"
+    },
+    {
+      "titulo": "QUIMICA BASICA S.A",
+      "nit": 817000705,
+      "anio": "2025",
+      "cargo": "Técnologo en Analisis Y Desarrollo de Software"
     }
   ]
 }
