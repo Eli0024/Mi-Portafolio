@@ -23,9 +23,9 @@ export const Estudios = () => {
 }, []);
 
   return (
-    <div className="bg-gray-800 h-screen flex justify-center items-center p-4" data-aos="flip-right">
+    <div className="bg-gray-800 h-screen  flex justify-center items-center p-4" data-aos="flip-right">
       <div className="w-full max-w-6xl">
-        <h2 className="text-6xl font-semibold text-gray-100 mb-8 text-center font-poppins">Mis Estudios Y Experiencia</h2>
+        <h2 className="text-5xl font-semibold text-gray-100 mb-8 text-center font-poppins">Mis Estudios Y Experiencia</h2>
 
         <Slider {...settings}>
           {/* Carrusel de Educación */}
@@ -34,7 +34,7 @@ export const Estudios = () => {
             <div className="flex flex-col items-center space-y-4">
               {Data.educacion.map((estudio, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg transition duration-300 hover:shadow-lg w-full max-w-md">
-                  <span className="block text-4xl font-semibold text-center font-poppins text-gray-800">{estudio.titulo}</span>
+                  <span className="block text-2xl font-semibold text-center font-poppins text-gray-800">{estudio.titulo}</span>
                   <p className="text-blue-800 font-bold text-center font-poppins text-2xl">{estudio.anio}</p>
                 </div>
               ))}
@@ -47,7 +47,7 @@ export const Estudios = () => {
             <div className="flex flex-col items-center space-y-4">
               {Data.experiencia.map((experiencia, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg transition duration-300 hover:shadow-lg w-full max-w-md">
-                  <span className="block text-4xl font-semibold text-gray-800 text-center font-poppins">{experiencia.titulo}</span>
+                  <span className="block text-2xl font-semibold text-gray-800 text-center font-poppins">{experiencia.titulo}</span>
                   <p className="text-gray-800 text-center text-2xl font-poppins">NIT: {experiencia.nit}</p>
                   <p className="text-gray-800 text-center text-2xl font-poppins">{experiencia.anio}</p>
                   <p className="text-gray-800 text-center text-2xl font-poppins">Cargo: {experiencia.cargo}</p>

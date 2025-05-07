@@ -10,8 +10,8 @@ export const Proyectos = () => {
   }, []);
 
   return (
-    <div className="bg-white h-screen m-20 flex flex-col items-center" data-aos="zoom-in">
-      <h1 className="text-6xl font-bold font-poppins pb-6 text-center mb-4">
+    <div className="bg-white h-screen flex flex-col items-center" data-aos="zoom-in">
+      <h1 className="text-5xl font-bold font-poppins pb-6 text-center mb-4">
         Mis Proyectos
       </h1>
       <div className="flex flex-wrap justify-center">
@@ -22,7 +22,7 @@ export const Proyectos = () => {
                 <img
                   src={proyecto.imagen}
                   alt={proyecto.titulo}
-                  className="m-auto w-full h-64 object-cover" // Ajusta el tamaño de la imagen
+                  className="m-auto w-full h-56 object-cover" // Ajusta el tamaño de la imagen
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
                   <h2 className="font-bold">{proyecto.titulo}</h2>

@@ -20,7 +20,7 @@ export const Inicio = () => {
       <div className="h-screen bg-gray-800 flex justify-center items-center relative overflow-hidden">
         <div className="h-full flex flex-col justify-center items-center relative z-10">
           <div className="text-center">
-            <p className="text-8xl text-white mb-2 glow-text">
+            <p className="text-7xl text-white mb-2 glow-text">
               <FaThumbsUp className="inline-block mb-1" /> Hola, Soy Eliana Paredes
             </p>
             <hr className="w- border-t-2 border-gray-600 my-4" />
@@ -29,13 +29,13 @@ export const Inicio = () => {
             </div>
             <div className="flex justify-center space-x-4 mt-4">
               <a href="https://wa.me/3114220469" target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp className="text-white text-6xl hover:text-green-400" />
+                <FaWhatsapp className="text-white text-4xl hover:text-green-400" />
               </a>
               <a href="https://github.com/Eli0024" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-white text-6xl hover:text-gray-400" />
+                <FaGithub className="text-white text-4xl hover:text-gray-400" />
               </a>
               <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-white text-6xl hover:text-blue-400" />
+                <FaLinkedin className="text-white text-4xl hover:text-blue-400" />
               </a>
             </div>
           </div>

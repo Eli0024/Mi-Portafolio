@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar bg-gray-800 p-6 text-2xl mx-auto flex justify-end items-center h-20 scroll-mt-4 cursor-pointer">
+    <nav className="navbar bg-gray-800 p-6 text-2xl mx-auto flex justify-end gap-4 items-center h-20 scroll-mt-4 cursor-pointer">
       <div className="md:hidden" onClick={toggleMenu}>
         <button className="text-white focus:outline-none">
           {isOpen ? '✖️' : '☰'}

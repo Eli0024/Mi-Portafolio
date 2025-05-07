@@ -20,8 +20,8 @@ export const Servicios = () => {
   }, []);
 
   return (
-    <div className="h-screen bg-gray-800" data-aos="fade-up">
-      <h1 className="text-4xl md:text-6xl font-bold font-poppins pt-20 text-white pb-8 text-center">
+    <div className="h-screen mt-40 bg-gray-800" data-aos="fade-up">
+      <h1 className="text-2xl md:text-6xl font-bold font-poppins pt-18 text-white pb-2 text-center">
         Servicios
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto p-6">
