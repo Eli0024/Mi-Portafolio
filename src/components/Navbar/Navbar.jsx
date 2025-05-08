@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll'; 
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -10,45 +10,88 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar  bg-gray-800 p-2 text-2xl mx-auto flex justify-end items-center h-20 scroll-mt-4 cursor-pointer">
-      <div className="md:hidden" onClick={toggleMenu}>
-        <button className="text-white focus:outline-none">
+    <nav className="navbar bg-gray-800 text-white h-20 px-4 md:px-8 flex justify-between items-center fixed w-full z-50 shadow-md">
+      
+      {/* Botón Hamburguesa */}
+      <div className="md:hidden">
+        <button onClick={toggleMenu} className="text-white text-3xl focus:outline-none">
           {isOpen ? '✖️' : '☰'}
         </button>
       </div>
-      <ul className={`md:flex space-x-4 text-white ${isOpen ? 'block' : 'hidden'} md:block absolute md:static bg-gray-800 left-0 top-20 w-full md:w-auto`}>
+
+      {/* Menú de navegación */}
+      <ul
+        className={`${
+          isOpen ? 'flex' : 'hidden'
+        } flex-col md:flex md:flex-row md:space-x-6 space-y-4 md:space-y-0 absolute md:static top-20 left-0 w-full md:w-auto bg-gray-800 px-4 md:px-0 py-4 md:py-0 z-50 transition-all duration-300 ease-in-out text-xl`}
+      >
         <li>
-          <Link to="inicio" smooth={true} duration={500} className="font-poppins pr-8 text-2xl">
+          <Link
+            to="inicio"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer font-poppins hover:text-sky-400"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link to="sobre" smooth={true} duration={500} className="font-poppins pr-8 text-2xl">
+          <Link
+            to="sobre"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer font-poppins hover:text-sky-400"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link to="estudios" smooth={true} duration={500} className="font-poppins pr-8 text-2xl">
+          <Link
+            to="estudios"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer font-poppins hover:text-sky-400"
+          >
             Study
           </Link>
         </li>
         <li>
-          <Link to="skils" smooth={true} duration={500} className="font-poppins pr-8 text-2xl">
+          <Link
+            to="skils"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer font-poppins hover:text-sky-400"
+          >
             Skills
           </Link>
         </li>
         <li>
-          <Link to="proyectos" smooth={true} duration={500} className="font-poppins pr-8 text-2xl">
+          <Link
+            to="proyectos"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer font-poppins hover:text-sky-400"
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link to="servicios" smooth={true} duration={500} className="font-poppins pr-8 text-2xl">
+          <Link
+            to="servicios"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer font-poppins hover:text-sky-400"
+          >
             Services
           </Link>
         </li>
         <li>
-          <Link to="contacto" smooth={true} duration={500} className="font-poppins pr-8 text-2xl">
+          <Link
+            to="contacto"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer font-poppins hover:text-sky-400"
+          >
             Contact
           </Link>
         </li>

@@ -20,8 +20,12 @@ export const Servicios = () => {
   }, []);
 
   return (
-    <div className="h-screen mt-14  bg-gray-800" data-aos="fade-up">
-      <h1 className="text-2xl md:text-4xl font-bold font-poppins pt-16 text-white pb-2 text-center">
+    <div 
+      id="servicios" // Asegúrate de que el ID coincida con el link del navbar
+      className="min-h-screen bg-gray-800"
+      data-aos="fade-up"
+    >
+      <h1 className="text-2xl md:text-4xl font-bold font-poppins pt-24 text-white pb-2 text-center">
         Servicios
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto p-4">

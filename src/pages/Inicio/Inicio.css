@@ -1,13 +1,15 @@
+/* Efecto de texto tipo "escritura" */
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
 }
 
+/* Efecto de texto tipo escritura */
 .typing-effect {
   overflow: hidden; 
   white-space: nowrap; 
   border-right: 4px solid rgba(255, 255, 255, 0.75); 
-  width: 20ch; 
+  width: 20ch; /* Aquí puedes usar unidades relativas como % o ch */
   animation: typing 3s steps(20) 1s forwards, blink 0.75s step-end infinite;
 }
 
@@ -15,6 +17,7 @@
   50% { border-color: transparent; }
 }
 
+/* Animación de rebote */
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -28,6 +31,7 @@
   animation: bounce 1s infinite;
 }
 
+/* Animación de ondas */
 @keyframes wave-animation {
   0% { transform: translateY(0); }
   50% { transform: translateY(-15px); }
@@ -42,5 +46,42 @@
   width: 100%;
 }
 
+/* Responsividad para dispositivos móviles */
+@media (max-width: 640px) {
+  /* Ajustar el texto para pantallas más pequeñas */
+  .typing-effect {
+    width: 80%; /* Permite más espacio para que el texto se muestre bien en móviles */
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+  }
 
+  /* Ajustar la animación de rebote para que sea más sutil en móviles */
+  .animate-bounce {
+    animation: bounce 0.8s infinite;
+  }
 
+  /* Asegurar que las ondas se ajusten correctamente en pantallas pequeñas */
+  .wave {
+    animation: wave-animation 6s ease-in-out infinite; /* Reduce la duración de la animación en pantallas pequeñas */
+  }
+
+  /* Ajustar el tamaño de la imagen */
+  .flex-1 img {
+    width: 80%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  }
+
+  /* Ajustar el texto "Hola, Soy Eliana Paredes" para pantallas pequeñas */
+  .glow-text {
+    font-size: 2.5rem;
+  }
+
+  /* Reducir el tamaño de los iconos */
+  .text-3xl {
+    font-size: 2rem;
+  }
+}
+
+/* Asegurar la correcta alineación de la imagen */
+.flex-1 img {
+  margin-top: 0 !important; /* Forzar que no haya margen superior */
+  margin-bottom: 0 !important; /* Forzar que no haya margen inferior */
+}
