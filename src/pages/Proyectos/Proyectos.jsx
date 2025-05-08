@@ -11,18 +11,18 @@ export const Proyectos = () => {
 
   return (
     <div className="bg-white h-screen flex flex-col items-center" data-aos="zoom-in">
-      <h1 className="text-5xl font-bold font-poppins pb-6 text-center mb-4">
+      <h1 className="text-5xl font-bold font-poppins mt-32 pb-4 text-center mb-4">
         Mis Proyectos
       </h1>
       <div className="flex flex-wrap justify-center">
         {Data.proyectos.map((proyecto, index) => (
-          <div key={index} className="card-body w-full sm:w-1/2 md:w-1/3 lg:w-2/5 p-4">
+          <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
             <div className="relative overflow-hidden bg-gray-200 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
               <figure className="relative">
                 <img
                   src={proyecto.imagen}
                   alt={proyecto.titulo}
-                  className="m-auto w-full h-56 object-cover" // Ajusta el tamaño de la imagen
+                  className="m-auto w-60 h-60 object-cover" // Ajusta el tamaño de la imagen
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-4 opacity-0 transition-opacity duration-300 hover:opacity-100">
                   <h2 className="font-bold">{proyecto.titulo}</h2>

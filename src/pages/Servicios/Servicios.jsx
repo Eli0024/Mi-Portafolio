@@ -20,21 +20,21 @@ export const Servicios = () => {
   }, []);
 
   return (
-    <div className="h-screen mt-40 bg-gray-800" data-aos="fade-up">
-      <h1 className="text-2xl md:text-6xl font-bold font-poppins pt-18 text-white pb-2 text-center">
+    <div className="h-screen mt-14  bg-gray-800" data-aos="fade-up">
+      <h1 className="text-2xl md:text-4xl font-bold font-poppins pt-16 text-white pb-2 text-center">
         Servicios
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto p-4">
         {Data.servicios.map((servicio) => (
           <div 
             key={servicio.id} 
             className="bg-white bg-opacity-90 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
           >
-            <div className="flex items-center space-x-4 mb-4">
+            <div className="flex items-center space-x-2">
               {iconMapping[servicio.titulo]} {/* Muestra el ícono correspondiente */}
-              <h2 className="text-xl md:text-2xl font-poppins text-center font-semibold text-gray-800">{servicio.titulo}</h2>
+              <h3 className="text-xl md:text-lg font-poppins text-center font-semibold text-gray-800">{servicio.titulo}</h3>
             </div>
-            <p className="font-poppins text-center text-lg md:text-xl pt-4 text-gray-800">{servicio.descripcion}</p>
+            <p className="font-poppins mt-4 text-center text-lg md:text-sm text-gray-800">{servicio.descripcion}</p>
           </div>
         ))}
       </div>
