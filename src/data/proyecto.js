@@ -11,7 +11,7 @@ export const Data = {
       "titulo": "Colombian Core",
       "descripcion": "Comida Y Platos Exquisitos",
       "anio": 2024,
-      "link": "https://link-a-tu-proyecto-2.com",
+      "link": "https://colombiancore.netlify.app/",
       "imagen": "https://i.ibb.co/2jbBsrt/colombian.png" 
     },
     {
