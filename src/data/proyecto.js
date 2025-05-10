@@ -25,7 +25,7 @@ export const Data = {
       "titulo": "Sistema de Inventario equipos de Computo",
       "descripcion": "Control de los diferentes equipos electronicos",
       "anio": 2025,
-      "link": "https://link-a-tu-proyecto-2.com",
+      "link": "https://link-a-tu-proyecto-4.com",
       "imagen": "https://i.ibb.co/7tqMwjTq/inventario.png" 
     }
   ]
