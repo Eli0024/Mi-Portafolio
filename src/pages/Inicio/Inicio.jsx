@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './Inicio.css';
-import { FaWhatsapp, FaGithub, FaInstagram, FaLinkedin, FaThumbsUp, FaArrowDown } from 'react-icons/fa';
+import { FaWhatsapp, FaGithub, FaLinkedin, FaThumbsUp } from 'react-icons/fa';
 import image from '../../assets/image/Eliana.jpeg'; 
 import Waves from '../../components/Waves';
 
@@ -15,10 +15,11 @@ export const Inicio = () => {
 
   return (
     <>
+      {/* Contenedor principal */}
       <div className="min-h-screen bg-gray-800 flex flex-col md:flex-row justify-center items-center relative overflow-hidden p-6">
         
         {/* Contenido textual */}
-        <div className="flex-1 text-center mb-8 md:mb-0">
+        <div className="w-full md:w-1/2 text-center mb-8 md:mb-0 px-4 z-10">
           <p className="text-5xl md:text-4xl text-white mb-4 glow-text">
             <FaThumbsUp className="inline-block mb-1" /> Hola, Soy Eliana Paredes
           </p>
@@ -40,22 +41,18 @@ export const Inicio = () => {
         </div>
 
         {/* Imagen */}
-        <div className="flex-1 flex justify-center items-center mt-4 md:mt-0"> {/* Reducir el margen superior aquí */}
+        <div className="w-full md:w-1/2 flex justify-center items-center mt-4 md:mt-0 z-10">
           <img
             src={image}
-            alt="Descripción de la imagen"
-            className="w-3/4 sm:w-2/3 md:w-1/2 lg:w-96 h-auto rounded-full object-cover shadow-lg"
+            alt="Eliana Paredes"
+            className="w-2/3 md:w-1/2 lg:w-96 h-auto rounded-full object-cover shadow-lg"
           />
         </div>
+      </div>
 
-        {/* Componente de Ondas */}
+      {/* Componente Waves abajo del contenido */}
+      <div className="relative">
         <Waves />
-
-        {/* Flecha hacia abajo */}
-        {/* <div className="absolute bottom-10 flex flex-col items-center cursor-pointer" onClick={handleScroll}>
-          <FaArrowDown className="text-gray-800 text-3xl animate-bounce" />
-          <p className="text-gray-800 text-sm mt-2">Desplázate hacia abajo</p>
-        </div> */}
       </div>
     </>
   );
