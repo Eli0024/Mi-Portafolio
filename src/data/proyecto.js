@@ -4,7 +4,7 @@ export const Data = {
       "titulo": "RealTimeDT",
       "descripcion": "Medir Temperatura y Humedad en Tiempo Real",
       "anio": 2024,
-      "link": "https://link-a-tu-proyecto-1.com",
+      "link": "https://link-a-tu-proyecto-123.com",
       "imagen": "https://i.ibb.co/S0NTgPH/realtime.png" 
     },
     {
